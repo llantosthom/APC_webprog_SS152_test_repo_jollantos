@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: powderblue;
+	text-align: center;
+	font-family: verdana;
+}
+h1 {
+    color: maroon;
+	font-size: 450%;
+	padding-top: 50px;
+}
+h2 {
+	color: maroon;
+	font-size: 450%;
+	padding-top: 50px;
+}
+p.one {
+	font-size: 200%;
+	padding-top: 50px;
+}
+p.two {
+ padding-left:50px;
+ padding-right:50px;
+ border-style: double;
+ font-size: 125%;
+ }
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+	padding-left: 125px;
+	padding-right: 125px;
+	padding-top: 20px;
+	
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+	padding-top:250px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:{background-color:white}
+
+th {
+    background-color: maroon;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+
+<hr width="15%" size="2" color="teal">
+<a href="javascript.html" targert.xml>| About Me | <a href="javascript2.html" targert.xml> Trivias | </a>
+<hr width="15%" size="2" color="teal">
+<h1> Welcome 
+</h1>
+
+<p class="one"><strong>About Me</strong></p><br>
+<p class="two">My full name is Joneil Thom Llantos and people call me Thom. I am 18 years old. I live in Makati,
+		and I am a college student in Asia Pacific College. I actually have a limited number of hobbies,
+		and hanging out with my friends is one of it. I am interested in so many stuff but mainly in computers. 
+		I just geek out every single time whenever I am using it. Oh and one more, I am addicted in playing
+		computer games and I just hope that it will end soon.</p>
+
+<div class="img">
+  <a target="_blank" href="me.jpg">
+    <img src="me.jpg" alt="Me" width="300" height="200">
+  </a>
+  <div class="desc">Here's me</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="mewithfriends.jpg">
+    <img src="mewithfriends.jpg" alt="Friends" width="600" height="400">
+  </a>
+  <div class="desc">With some friends</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="2.jpg">
+    <img src="2.jpg" alt="Guitar" width="600" height="400">
+  </a>
+  <div class="desc">Doing some music</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="3.jpg">
+    <img src="3.jpg" alt="Manila Major" width="600" height="400">
+  </a>
+  <div class="desc">at Manilar Major.</div>
+</div>
+<table>
+  <tr>
+    <th>Hobbies</th>
+    <th>Interests</th>
+    
+  </tr>
+  <tr>
+    <td>Hang out with some of my friends.</td>
+    <td>Exploring the computer.</td>
+    
+  </tr>
+  <tr>
+    <td>Play computer games.</td>
+    <td>Games</td>
+   </tr>
+   <tr>
+   <td>etc</td>
+   <td>etc</td>
+  </tr>
+</table>
+
+<h2>Some of my favorite websites.</h2>
+
+<a href="https://www.facebook.com">
+		<img src="facebook.png" alt"facebook.com">
+		</a>
+<a href="https://www.youtube.com">
+		<img src="youtube.png" alt"youtube.com">
+		</a>
+
+</body>
+</html>
