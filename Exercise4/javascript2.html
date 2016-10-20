@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: powderblue;
+	text-align: center;
+	font-family: verdana;
+}
+h1 {
+	font-family: Satisfy, cursive;
+	font-weight:normal;
+    color: maroon;
+	font-size: 450%;
+	padding-top: 50px;
+}
+
+p.two {
+font-family: Satisfy, cursive;
+ padding-left:50px;
+ padding-right:50px;
+ font-size: 150%;
+ }
+
+
+p.three {
+	font-family: Satisfy, cursive;
+	font-size: 80%;
+	padding-top: 25px;
+}
+
+ol {
+    width: 18%;
+    margin: auto;
+}
+div {
+	
+}
+
+</style>
+</head>
+<body>
+
+<hr width="15%" size="2" color="teal">
+<a href="homepage.php" target.xml> | Home
+<a href="javascript.html" target.xml>| About Me | 
+<a href="javascript2.html" target.xml> Trivias | 
+</a>
+<hr width="15%" size="2" color="teal">
+
+<h1 id="h1" onclick="myFunction()"> Let's have some fun!
+</h1>
+
+<button type="button" onclick="document.getElementById('h1').style.fontSize='35px'">Change the font</button>
+<script>
+function myFunction() {
+    document.getElementById("h1").innerHTML = "Ha, you got trolled! There aint no fun here.";
+}
+</script>
+
+<p class="two"> So in this part of my webpage, I'm going to ask you some questions to see how well you know me. </p>
+<div>
+<ol>
+<li>
+<p>What do I do most of the time?</p>
+<p id="1">
+<button type="button" onclick="document.getElementById('1').innerHTML = 'Wasting time with useless stuff..'">Reveal the answer</button>
+</p>
+</li>
+<li>
+<p>What do I hate doing?</p>
+<p id="2">
+<button type="button" onclick="document.getElementById('2').innerHTML = 'Physical activities, I even hate walking.'">Reveal the answer</button>
+</p>
+</li>
+<li>
+<p>What do I love doing?</p>
+<p id="3">
+<button type="button" onclick="document.getElementById('3').innerHTML = 'Tasting food, I freaking love doing it!!'">Reveal the answer</button>
+</p>
+</li>
+<li>
+<p>What's the craziest thing I've done? </p>
+<p id="4">
+<button type="button" onclick="document.getElementById('4').innerHTML = 'Probably when I 123-ed a cab.'">Reveal the answer</button>
+</p>
+</li>
+<li>
+<p>What movie do you like the most.</p>
+<p id="5">
+<button type="button" onclick="document.getElementById('5').innerHTML = 'The Godfather'">
+Reveal the answer</button>
+</p>
+</li>
+</ol>
+</div>
+
+<p class="three"> 
+More fun? Click the header! Yes, the maroon one.
+</p>
+
+<br>
+<br>
+<br>
+
+</body>
+</html>
