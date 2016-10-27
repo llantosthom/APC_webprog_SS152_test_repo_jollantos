@@ -3,13 +3,14 @@
 <head>
 <style>
 body {
-    background-color: powderblue;
-	text-align: center;
+    background-color: #e6f9ff;
+	
 	font-family: verdana;
 }
 p.one {
 	font-size: 200%;
 	padding-top: 50px;
+	text-align: center;
 }
 h1 {
 	font-family: Satisfy, cursive;
@@ -17,6 +18,7 @@ h1 {
     color: maroon;
 	font-size: 450%;
 	padding-top: 50px;
+	text-align: center;
 }
 .button {
   display: inline-block;
@@ -57,19 +59,37 @@ h1 {
   opacity: 1;
   right: 0;
 }
+div {background-color: #ccf3ff;}
+div a {
+    text-decoration: none;
+    color: black;
+	padding: 5px;
+    font-size: 20px;
+    display:inline-block;
+
+}
+
 
 </style>
 </head>
+<center>
 <body>
-
-<hr width="15%" size="2" color="teal">
+<div>
+<hr width="120%" size="2" color="teal">
 <a href="homepage.php" target.xml> | Home
 <a href="javascript.html" target.xml>| About Me | 
 <a href="javascript2.html" target.xml> Trivias | 
 </a>
-<hr width="15%" size="2" color="teal">
+<hr width="120%" size="2" color="teal">
+</div>
+</center>
 
+
+
+<center>
 <?php
+
+
 // define variables and set to empty values
 $nameErr = $nicknameErr = $emailErr = $genderErr = $phoneErr = $homeadErr = "";
 $name =$nickname= $email = $gender = $comment = $phone = $homead = "";
@@ -130,6 +150,7 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+
 ?>
 
 <h1> Registration </h1>
