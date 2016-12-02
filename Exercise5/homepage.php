@@ -53,22 +53,21 @@
  
  .button:hover span {
    padding-right: 25px;
+   </style>
  <?php
  include_once 'dbconfig.php';
  
  // delete condition
  if(isset($_GET['delete_id']))
  {
-  $sql_query="DELETE FROM dbtuts WHERE name=".$_GET['delete_id'];
-  mysql_query($sql_query);
+  $sql_query="DELETE FROM users WHERE name=".$_GET['delete_id'];
+  mysqli_query($sql_query);
   header("Location: $_SERVER[PHP_SELF]");
   }
  // delete condition
  ?>
   
- .button:hover span:after {
-   opacity: 1;
-   right: 0;
+
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
  <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
@@ -83,24 +82,14 @@
    window.location.href='edit_data.php?edit_id='+id;
   }
   }
- div {background-color: #ccf3ff;}
- div a {
-   text-decoration: none;
-     color: black;
- 	padding: 5px;
-     font-size: 20px;
-     display:inline-block;
- 
  function delete_id(id)
  {
   if(confirm('Sure to Delete ?'))
   {
-   window.location.href='index.php?delete_id='+id;
+   window.location.href='homepage.php?delete_id='+id;
   }
   }
  
- 
- </style>
  </script>
   </head>
  <center>
@@ -140,21 +129,21 @@
    <th colspan="2">Operations</th>
      </tr>
      <?php
-  $sql_query="SELECT * FROM dbtuts";
+  $sql_query="SELECT * FROM users";
   $result_set=mysqli_query($con,$sql_query);
   while($row=mysqli_fetch_row($result_set))
   {
    ?>
          <tr>
-         <td><?php echo $row[0]; ?></td>
          <td><?php echo $row[1]; ?></td>
-       <td><?php echo $row[2]; ?></td>
- 		<td><?php echo $row[3]; ?></td>
+         <td><?php echo $row[2]; ?></td>
+       <td><?php echo $row[3]; ?></td>
  		<td><?php echo $row[4]; ?></td>
  		<td><?php echo $row[5]; ?></td>
  		<td><?php echo $row[6]; ?></td>
+ 		<td><?php echo $row[7]; ?></td>
  		
-   <td align="center"><a href="javascript:edt_id('<?php echo $row[0]; ?>')"><img src="b_edit.png" align="EDIT" /></a></td>
+		 <td align="center"><a href="javascript:edt_id('<?php echo $row[0]; ?>')"><img src="b_edit.png" align="EDIT" /></a></td>
          <td align="center"><a href="javascript:delete_id('<?php echo $row[0]; ?>')"><img src="b_drop.png" align="DELETE" /></a></td>
          </tr>
          <?php
