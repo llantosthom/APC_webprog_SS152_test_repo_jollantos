@@ -29,7 +29,7 @@
    text-align: center;
    font-size: 25px;
    padding: 20px;
-   width: 150px;
+   width: 149px;
    transition: all 0.5s;
    cursor: pointer;
    margin: 5px;
