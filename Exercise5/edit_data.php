@@ -23,7 +23,7 @@ if(isset($_POST['btn-update']))
  // sql query for update data into database
  
  // sql query execution function
- if(mysql_query($sql_query))
+ if(mysqli_query($con,$sql_query))
  {
   ?>
   <script type="text/javascript">
@@ -68,13 +68,25 @@ if(isset($_POST['btn-cancel']))
     <form method="post">
     <table align="center">
     <tr>
-    <td><input type="text" name="first_name" placeholder="First Name" value="<?php echo $fetched_row['first_name']; ?>" required /></td>
+    <td><input type="text" name="name" placeholder="Name" value="<?php echo $fetched_row['name']; ?>" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="last_name" placeholder="Last Name" value="<?php echo $fetched_row['last_name']; ?>" required /></td>
+    <td><input type="text" name="nickname" placeholder="Nickname" value="<?php echo $fetched_row['nickname']; ?>" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="city_name" placeholder="City" value="<?php echo $fetched_row['user_city']; ?>" required /></td>
+    <td><input type="text" name="email" placeholder="Email" value="<?php echo $fetched_row['email']; ?>" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="phone" placeholder="Phone" value="<?php echo $fetched_row['phone']; ?>" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="homead" placeholder="Home Address" value="<?php echo $fetched_row['homead']; ?>" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="comment" placeholder="Comment" value="<?php echo $fetched_row['comment']; ?>" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="gender" placeholder="Gender" value="<?php echo $fetched_row['gender']; ?>" required /></td>
     </tr>
     <tr>
     <td>
