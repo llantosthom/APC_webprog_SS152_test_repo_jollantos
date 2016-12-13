@@ -2,58 +2,93 @@
  <html>
  <head>
  <style>
- body {
-     background-color: #e6f9ff;
- 	
- 	font-family: verdana;
- }
- p.one {
- 	font-size: 200%;
- 	padding-top: 50px;
- 	text-align: center;
- }
- h1 {
- 	font-family: Satisfy, cursive;
- 	font-weight:normal;
-     color: maroon;
- 	font-size: 450%;
- padding-top: 50px;
- 	text-align: center;
- }
- .button {
-   display: inline-block;
-  border-radius: 8px;
-   background-color: powderblue;
-   border: none;
-   color: maroon;
-   text-align: center;
-   font-size: 25px;
-   padding: 20px;
-   width: 149px;
-   transition: all 0.5s;
-   cursor: pointer;
-   margin: 5px;
- }
+	body {
+    background-color: #e6f9ff;
+	text-align: center;
+	font-family: verdana;
+}
+#b {background-color: #ccf3ff;}
+	div a {
+    text-decoration: none;
+    color: black;
+	padding: 5px;
+    font-size: 20px;
+    display:inline-block;
+	}
+	#header
+{
+ width:100%;
+ height:50px;
+ background:#00a2d1;
+ color:#f9f9f9;
+ font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ font-size:35px;
+ text-align:center;
+}
+	
+	table {
+ width:80%;
+ font-family:Tahoma, Geneva, sans-serif;
+ font-weight:bolder;
+ color:#999;
+ margin-bottom:80px;
+}
+table a
+{
+ text-decoration:none;
+ color:#00a2d1;
+}
+table,td,th
+{
+ border-collapse:collapse;
+ border:solid #d0d0d0 1px;
+ padding:20px;
+}
+table td input
+{
+ width:97%;
+ height:35px;
+ border:dashed #00a2d1 1px;
+ padding-left:15px;
+ font-family:Verdana, Geneva, sans-serif;
+ box-shadow:0px 0px 0px rgba(1,0,0,0.2);
+ outline:none;
+}
+table td input:focus
+{
+ box-shadow:inset 1px 1px 1px rgba(1,0,0,0.2);
+ outline:none;
+}
+table td button
+{
+ border:solid #f9f9f9 0px;
+ box-shadow:1px 1px 1px rgba(1,0,0,0.2);
+ outline:none;
+ background:#00a2d1;
+ padding:9px 15px 9px 15px;
+ color:#f9f9f9;
+ font-family:Arial, Helvetica, sans-serif;
+ font-weight:bolder;
+ border-radius:3px;
+ width:49.5%;
+}
+table td button:active
+{
+ position:relative;
+ top:1px;
+}
+	
+    
  
- .button span {
-   cursor: pointer;
-   display: inline-block;
-   position: relative;
-   transition: 0.5s;
- }
  
- .button span:after {
-   content: '»';
-   position: absolute;
-   opacity: 0;
-   top: 0;
-   right: -20px;
-  transition: 0.800s;
- }
  
- .button:hover span {
-   padding-right: 25px;
- }
+ 
+
+ 
+ 
+ 
+ 
+ 
    </style>
  <?php
  include_once 'dbconfig.php';
@@ -74,7 +109,7 @@
  <head>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <title>Thomas</title>
- <link rel="stylesheet" href="style.css" type="text/css" />
+ 
  <script type="text/javascript">
  function edt_id(id)
  {
@@ -95,30 +130,27 @@
   </head>
  <center>
   <body>
- <div>
+
+ <div id='b'> 
  <hr width="120%" size="2" color="teal">
- <center>
- 
- <div id="header">
-  <div>
- 
-  <a href="homepage.php" target.xml> | Home
-  <a href="javascript.html" target.xml>| About Me | 
-  <a href="javascript2.html" target.xml> Trivias | 
-  </a>
- <hr width="120%" size="2" color="teal">
- </div>
- </center>
+<a href="homepage.php" target.xml> | Home
+<a href="javascript.html" target.xml>| About Me | 
+<a href="javascript2.html" target.xml> Trivias | 
+</a>
+<hr width="120%" size="2" color="teal">
+</div>
   
- </div>
- </div>
+ <div id="table">
   
- <div id="body">
-  <div id="content">
      <table align="center">
+	 
+	 
      <tr>
-     <th colspan="9"><a href="add_data.php">add data here.</a></th>
+	 
+     <th colspan="9"><a  href="add_data.php">add data here.</a></th>
+	 
      </tr>
+	
     <th>Name</th>
      <th>Nickname</th>
      <th>Email</th>
@@ -220,9 +252,7 @@ if (empty($_POST["phone"])) {
    return $data;
  }
  
- ?>
- 
- 
+ ?> 
  </center>
   </body>
   </html> 
