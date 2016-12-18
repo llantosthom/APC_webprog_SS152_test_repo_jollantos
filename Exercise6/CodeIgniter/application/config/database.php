@@ -80,7 +80,7 @@ $db['default'] = array(
 	'password' => '',
 	'database' => 'dbtuts',
 	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
+	'dbprefix' => ' ',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
