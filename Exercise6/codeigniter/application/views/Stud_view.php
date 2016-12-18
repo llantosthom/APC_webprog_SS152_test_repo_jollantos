@@ -13,7 +13,7 @@
       <table border = "1"> 
          <?php 
             $i = 1; 
-            echo "<tr>"; 
+            echo "<tr>";  
             echo "<td>Sr#</td>"; 
             echo "<td>Roll No.</td>"; 
             echo "<td>Name</td>"; 
