@@ -18,7 +18,7 @@
       public function add_student_view() { 
          $this->load->helper('form'); 
          $this->load->view('Stud_add'); 
-      } 
+      }  
   
       public function add_student() { 
          $this->load->model('Stud_Model');
