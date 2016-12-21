@@ -5,7 +5,7 @@
         <th><strong>Name</strong></th>
         <th><strong>Nickname</strong></th>
         <th><strong>Email</strong></th>
-        <th><strong>Contact</strong></th>
+        <th><strong>Phone Number</strong></th>
         <th><strong>Address</strong></th>
         <th><strong>Gender</strong></th>
         <th><strong>Comment</strong></th>

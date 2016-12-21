@@ -22,7 +22,7 @@
         <br><label for="comment">Comment</label><br>
         <textarea name="comment" rows="3" cols="40"></textarea><br>
         <br>
-        <input type="submit" name="submit" value="Registered" /><br>
+        <input type="submit" name="submit" value="Sign up" /><br>
       </p>
     </div>
   </form>

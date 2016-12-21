@@ -57,7 +57,7 @@ class Register extends CI_Controller {
         }
         else
         {
-            $this->register_model->set_register();
+            $this->register_model->set_news();
             $this->load->view('body', $data);
             $this->load->view('register/success');
         }
@@ -78,7 +78,7 @@ class Register extends CI_Controller {
         $data['title'] = 'Update item';
         $data['user_item'] = $this->register_model->get_user_by_id($id);
 
-        $this->form_validation->set_rules('name', 'Name', 'required');
+         $this->form_validation->set_rules('name', 'Name', 'required');
         $this->form_validation->set_rules('nickname', 'Nickname');
         $this->form_validation->set_rules('email', 'Email', 'required');
         $this->form_validation->set_rules('phone', 'Phone', 'required');
@@ -109,9 +109,9 @@ class Register extends CI_Controller {
             show_404();
         }
 
-        $user_item = $this->news_model->get_user_by_id($id);
+        $user_item = $this->register_model->get_user_by_id($id);
 
-        $this->news_model->delete_news($id);
+        $this->register_model->delete_news($id);
         redirect( base_url() . 'index.php/register');
     }
 }
