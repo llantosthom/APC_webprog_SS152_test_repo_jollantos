@@ -6,7 +6,7 @@
 	
 	<body>
                 <center><h1 style="font-family: sans-serif">Welcome!</h1>
-                <p><a href="<?php echo site_url('register'); ?>">Home</a> | <a href="<?php echo site_url('news/create'); ?>">Add Data</a></p></center>
+                <p><a href="<?php echo site_url('register'); ?>">Home</a> | <a href="<?php echo site_url('register/create'); ?>">Add Data</a></p></center>
 	<body>
 	
 </html>
