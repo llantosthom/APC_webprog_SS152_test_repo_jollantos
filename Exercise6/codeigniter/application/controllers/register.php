@@ -78,8 +78,8 @@ class Register extends CI_Controller {
         $data['title'] = 'Update item';
         $data['user_item'] = $this->register_model->get_user_by_id($id);
 
-          $this->form_validation->set_rules('name', 'Name', 'required');
-        $this->form_validation->set_rules('nickname', 'Nickname',);
+        $this->form_validation->set_rules('name', 'Name', 'required');
+        $this->form_validation->set_rules('nickname', 'Nickname');
         $this->form_validation->set_rules('email', 'Email', 'required');
         $this->form_validation->set_rules('phone', 'Phone', 'required');
         $this->form_validation->set_rules('homead', 'Address', 'required');
