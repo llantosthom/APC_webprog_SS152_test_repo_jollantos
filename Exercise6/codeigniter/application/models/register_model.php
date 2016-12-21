@@ -1,5 +1,5 @@
 <?php
-class News_model extends CI_Model {
+class register_model extends CI_Model {
 
     public function __construct()
     {
@@ -38,13 +38,12 @@ class News_model extends CI_Model {
         $user_id = url_title($this->input->post('id'), 'dash', TRUE);
 
         $data = array(
-            'first_name' => $this->input->post('first_name'),
-            'last_name' => $this->input->post('last_name'),
+            'name' => $this->input->post('name'),
             'nickname' => $this->input->post('nickname'),
             'email' => $this->input->post('email'),
-            'user_city' => $this->input->post('user_city'),
+            'phone' => $this->input->post('phone'),
+            'homead' => $this->input->post('homead'),
             'gender' => $this->input->post('gender'),
-            'mobile' => $this->input->post('mobile'),
             'comment' => $this->input->post('comment')
         );
 
