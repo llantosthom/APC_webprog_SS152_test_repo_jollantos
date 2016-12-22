@@ -71,7 +71,7 @@ class Register extends CI_Controller {
         {
             show_404();
         }
-
+    
         $this->load->helper('form');
         $this->load->library('form_validation');
 
@@ -95,7 +95,7 @@ class Register extends CI_Controller {
         }
         else
         {
-            $this->register_model->set_register($id);
+            $this->register_model->set_news($id);
             redirect( base_url() . 'index.php/register');
         }
     }
